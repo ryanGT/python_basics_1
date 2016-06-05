@@ -1,4 +1,5 @@
-myvect = [1,2,3]
+#myvect = [1,2,3]
+myvect = ['a','bob',3]
 
 N = len(myvect)
 

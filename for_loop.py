@@ -1,4 +1,4 @@
-myvect = [1,2,3]
+myvect = ['a','bob',3]
 
 for item in myvect:
     print(item)

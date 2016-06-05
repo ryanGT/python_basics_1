@@ -1,4 +1,4 @@
-a = 100
+a = 15
 
 if a == 10:
     print('a = 10')
@@ -9,5 +9,6 @@ elif a== 30:
 else:
     print('no match')
     print('a='+str(a))
-    
+
+print('after if')    
         
