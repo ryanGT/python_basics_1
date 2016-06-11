@@ -4,20 +4,25 @@ from numpy import *
 t = arange(0,1,0.01)
 y1 = sin(2*pi*t)
 
-figure(1)
-clf()
-plot(t,y1)
-xlabel('Time (sec.)')
-ylabel('$y_1(t)$')
-savefig('fig1.png',dpi=200)
+def myplot(t, y, fignum=1, myxlabel='Time (sec.)', \
+           myylabel='', clear=True):
+    figure(fignum)# create or activate figure
+    if clear:
+        clf()#clear figure
+    plot(t,y)
+    if myxlabel:
+        xlabel(myxlabel)
+    if myylabel:
+        ylabel(myylabel)
+
+
+myplot(t, y1, myylabel='$y_1(t)$')
+#savefig('fig1.png',dpi=200)
 
 y2 = 1.5*cos(3*pi*t)
 
-figure(2)
-clf()
-plot(t,y2)
-xlabel('Time (sec.)')
-ylabel('$y_2(t)$')
-savefig('fig2.png',dpi=200)
+myplot(t, y2, myylabel='$y(t)$', fignum=1, \
+       clear=False)
+#savefig('fig2.png',dpi=200)
 
 show()
