@@ -17,12 +17,11 @@ def myplot(t, y, fignum=1, myxlabel='Time (sec.)', \
 
 
 myplot(t, y1, myylabel='$y_1(t)$')
-#savefig('fig1.png',dpi=200)
+savefig('fig1.png',dpi=200)
 
 y2 = 1.5*cos(3*pi*t)
 
-myplot(t, y2, myylabel='$y(t)$', fignum=1, \
-       clear=False)
-#savefig('fig2.png',dpi=200)
+myplot(t, y2, myylabel='$y_2(t)$', fignum=2)
+savefig('fig2.png',dpi=200)
 
 show()
