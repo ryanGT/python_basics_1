@@ -12,5 +12,5 @@ b_val = mydict['b']# and another
 mydict['b2'] = 7.0
 
 # you can iterate of the keys and values in a for loop like this:
-for key, value in mydict.iteritems():
+for key, value in mydict.items():
     print('key = %s, value = %s' % (key, value))
