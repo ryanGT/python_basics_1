@@ -1,10 +1,6 @@
-#myvect = [1,2,3]
 myvect = ['a','bob',3]
-
-N = len(myvect)
-
-for i in range(N):
-    item = myvect[i]
+print('enumerate example')
+for i, item in enumerate(myvect):
     print('i = ' + str(i))
     print('item = ' + str(item))
 
